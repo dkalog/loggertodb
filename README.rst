@@ -52,7 +52,7 @@ The first time:
  1. Install ``git``.
  2. `(a)` Install a recent Python 3 version. `(b)` Install virtualenv
  3. Execute Git Bash.
- 4. Clone loggertodb. (https://github.com//loggertodb)
+ 4. Clone `loggertodb_` 
  5. Change to the working directory of ``loggertodb``.
  6. ``pip install virtualenv==16.1.0`` (this is because of a
     `pyinstaller bug`_).
@@ -63,6 +63,7 @@ The first time:
  11. ``..\venv\Scripts\pyinstaller --onefile --name=loggertodb bin/loggertodb-windows``
 
 .. _pyinstaller bug: https://github.com/pyinstaller/pyinstaller/issues/4064
+.. _loggertodb: https://github.com/openmeteo/loggertodb
 
 Next times:
 
@@ -75,10 +76,10 @@ After this, ``loggertodb.exe`` should be in the ``dist`` directory.
 
 
 Creating a Windows executable via vagrant
-=========================================
+------------------------------------------
 
 This is a Windows 7 (32bit) Box that is derived from a box provided by
-microsoft on ["Modern.IE"](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/windows) with a 10 day evaluation licence or or use this
+microsoft on [Modern.IE](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/windows) with a 10 day evaluation licence or use this
 ["IE11 on Win7" Vagrant Box with build number 20150916](https://az792536.vo.msecnd.net/vms/VMBuild_20150916/Vagrant/IE11/IE11.Win7.Vagrant.zip) adapted to match vagrant's requirements:
 
  * User is 'vagrant' (password 'vagrant')
@@ -97,10 +98,6 @@ Easy install  on an vagrant
 * rename box to "IE11-Win7.box" and run ``vagrant box add  file:///C:/path/to/file.box/IE11-Win7.box  --name IE11Win7 ``
 * run ``vagrant up`` (wait for timeout message!)
 
-
-
-
-Using a Windows 7 (32bit) Box that is derived from a box provided by microsoft on Modern.IE with a 10 day evaluation licence. This box is based on the "IE11 on Win7" Vagrant Box with build number 20150916. 
 
 The first time:
 
